@@ -72,7 +72,7 @@ body {
 }
 
 .button {
-    display: block;
+    display: inline-block;
     font-size: 20px;
     line-height: 125%;
     text-align: center;
@@ -87,5 +87,35 @@ body {
 
     &_small {
         padding: 13px 50px;
+    }
+}
+
+.hero {
+    background: url(../images/hero-bg.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 150px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        height: calc(100vh - 84px);
+    }
+
+    &__wrapper {
+        width: 440px;
+    }
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 114%;
+        color: $green-500;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        color: $gray-400;
+        margin-bottom: 50px;
     }
 }

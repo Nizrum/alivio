@@ -156,7 +156,7 @@ body {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   font-size: 20px;
   line-height: 125%;
   text-align: center;
@@ -172,4 +172,34 @@ body {
 
 .button_small {
   padding: 13px 50px;
+}
+
+.hero {
+  background: url(../images/hero-bg.jpg) no-repeat;
+  background-size: cover;
+  margin-bottom: 150px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 84px);
+}
+
+.hero__wrapper {
+  width: 440px;
+}
+
+.hero__title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 114%;
+  color: #01996D;
+  margin-bottom: 30px;
+}
+
+.hero__subtitle {
+  color: #484848;
+  margin-bottom: 50px;
 }
