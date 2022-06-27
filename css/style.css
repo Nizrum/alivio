@@ -177,7 +177,6 @@ body {
 .hero {
   background: url(../images/hero-bg.jpg) no-repeat;
   background-size: cover;
-  margin-bottom: 150px;
 }
 
 .hero__container {
@@ -202,4 +201,60 @@ body {
 .hero__subtitle {
   color: #484848;
   margin-bottom: 50px;
+}
+
+.review {
+  background-color: #245852;
+  padding: 150px 0px;
+}
+
+.review__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review__text {
+  width: 600px;
+}
+
+.review__title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.review__subtitle {
+  font-size: 25px;
+  line-height: 157%;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.review__video {
+  border-radius: 16.33px;
+  overflow: hidden;
+  position: relative;
+}
+
+.review__video:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 73px;
+  height: 73px;
+  background-image: url(../images/play-button.svg);
+}
+
+.review__video:hover:after {
+  opacity: 0.65;
+}
+
+.review__image {
+  width: 800px;
 }

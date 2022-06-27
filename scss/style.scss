@@ -93,7 +93,6 @@ body {
 .hero {
     background: url(../images/hero-bg.jpg) no-repeat;
     background-size: cover;
-    margin-bottom: 150px;
 
     &__container {
         display: flex;
@@ -117,5 +116,64 @@ body {
     &__subtitle {
         color: $gray-400;
         margin-bottom: 50px;
+    }
+}
+
+.review {
+    background-color: $green-900;
+    padding: 150px 0px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        width: 600px;
+    }
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-size: 25px;
+        line-height: 157%;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+
+    &__video {
+        border-radius: 16.33px;
+        overflow: hidden;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 73px;
+            height: 73px;
+            background-image: url(../images/play-button.svg);
+        }
+
+        &:hover {
+
+            &:after {
+                opacity: 0.65;
+            }
+        }
+    }
+
+    &__image {
+        width: 800px;
     }
 }
