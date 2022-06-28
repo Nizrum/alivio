@@ -119,6 +119,109 @@ body {
     }
 }
 
+.steps {
+    padding: 150px 0px;
+
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        line-height: 157%;
+        color: $gray-500;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        width: 585px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        color: $green-500;
+    }
+
+    &__text {
+        width: 670px;
+        color: $gray-500;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 55px;
+        padding: 145px 0px 0px 90px;
+        position: relative;
+        width: auto;
+
+        &:before {
+            content: '01';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: 400;
+            font-size: 150px;
+            line-height: 150%;
+            text-align: center;
+            color: $green-500;
+            opacity: 0.2;
+        }
+    }
+
+    &:nth-child(2) {
+
+       .card__title {
+
+            &:before {
+                content: '02';
+            }
+       }
+    }
+
+    &:nth-child(3) {
+
+       .card__title {
+
+            &:before {
+                content: '03';
+            }
+       }
+    }
+
+    &__subtitle {
+        color: $gray-500;
+        flex: 1 1 100%;
+        margin-bottom: 50px;
+    }
+
+    &__image {
+        border-radius: 12px;
+        height: 492px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 .review {
     background-color: $green-900;
     padding: 150px 0px;
