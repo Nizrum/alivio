@@ -280,3 +280,107 @@ body {
         width: 800px;
     }
 }
+
+.product {
+    padding: 150px 0px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__image {
+        width: 640px;
+        border-radius: 18px;
+        margin: 0px 0px 75px 60px;
+    }
+
+    &__info {
+        width: 585px;
+    }
+
+    &__subtitle {
+        font-size: 25px;
+        line-height: 157%;
+        color: $gray-500;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        color: $green-500;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $gray-400;
+        margin-bottom: 40px;
+    }
+}
+
+.profile {
+    padding: 23px 60px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+
+    &__title {
+        font-size: 14.5px;
+        line-height: 157%;
+        text-align: center;
+        margin-bottom: 21px;
+        position: relative;
+
+        &::after {
+            content: '';
+            height: 1px;
+            width: 110px;
+            background-color: #000;
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__image {
+        width: 57px;
+        height: 57px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        margin-bottom: 20px;
+    }
+
+    &__list-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 157%;
+        margin-bottom: 16px;
+    }
+
+    &__list-item {
+        font-size: 11px;
+        line-height: 157%;
+        margin-bottom: 16px;
+        list-style-type: disc;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
