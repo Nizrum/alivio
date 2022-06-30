@@ -89,6 +89,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -152,6 +155,7 @@ body {
 }
 
 .logo {
+  display: block;
   width: 80px;
 }
 
@@ -452,4 +456,32 @@ body {
 
 .profile__list-item:last-child {
   margin-bottom: 0px;
+}
+
+.footer {
+  padding: 130px 0px;
+  background-color: #245852;
+}
+
+.footer__logo {
+  margin-bottom: 55px;
+  width: 108px;
+}
+
+.footer__link {
+  font-size: 25px;
+  line-height: 120%;
+  margin-bottom: 55px;
+}
+
+.footer__link a {
+  color: #fff;
+}
+
+.footer__link:last-child {
+  margin-bottom: 0;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }
