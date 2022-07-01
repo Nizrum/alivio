@@ -220,7 +220,6 @@ body {
 
     &__image {
         border-radius: 12px;
-        height: 492px;
         width: 100%;
         object-fit: cover;
     }
@@ -257,6 +256,7 @@ body {
     }
 
     &__video {
+        display: block;
         border-radius: 16.33px;
         overflow: hidden;
         position: relative;
@@ -413,6 +413,74 @@ body {
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    
+    .container {
+        width: 1170px;
+    }
+
+    .header {
+
+        &__wrapper {
+            justify-content: space-between;
+        }
+
+        &__menu {
+            margin: 0;
+        }
+
+        &__buttons {
+            margin: 0;
+        }
+    }
+
+    .steps {
+
+        &__title {
+            width: 48%;
+        }
+
+        &__text {
+            width: 48%;
+        }
+    }
+
+    .card {
+        width: 31%;
+
+        &__title {
+            white-space: nowrap;
+        }
+    }
+
+    .review {
+
+        &__text {
+            width: 48%;
+        }
+
+        &__video {
+            width: 48%;
+        }
+
+        &__image {
+            width: 100%;
+        }
+    }
+
+    .product {
+
+        &__image {
+            width: 45%;
+            margin: 0px 0px 75px 35px;
+        }
+
+        &__info {
+            width: 48%;
         }
     }
 }
