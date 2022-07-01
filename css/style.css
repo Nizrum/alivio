@@ -220,7 +220,7 @@ body {
 }
 
 .steps__subtitle {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 157%;
   color: #424242;
   width: 100%;
@@ -387,12 +387,12 @@ body {
   font-size: 50px;
   line-height: 157%;
   color: #01996D;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .product__text {
   color: #484848;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .profile {
@@ -526,5 +526,54 @@ body {
   }
   .product__info {
     width: 48%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    width: 900px;
+  }
+  .header__link {
+    margin: 0px 20px;
+  }
+  .hero__title {
+    margin-bottom: 20px;
+  }
+  .hero__subtitle {
+    margin-bottom: 40px;
+  }
+  .button {
+    padding: 15px 38px;
+  }
+  .steps__title {
+    font-size: 42px;
+  }
+  .card__title {
+    padding: 145px 0px 0px 0px;
+    margin-bottom: 40px;
+  }
+  .card__title:before {
+    font-size: 120px;
+  }
+  .review__title {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .review__subtitle {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  .product__title {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .product__text {
+    margin-bottom: 40px;
+  }
+  .profile {
+    padding: 23px 30px;
   }
 }

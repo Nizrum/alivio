@@ -135,7 +135,7 @@ body {
     }
 
     &__subtitle {
-        font-size: 24px;
+        font-size: 25px;
         line-height: 157%;
         color: $gray-500;
         width: 100%;
@@ -317,12 +317,12 @@ body {
         font-size: 50px;
         line-height: 157%;
         color: $green-500;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     &__text {
         color: $gray-400;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 }
 
@@ -482,5 +482,86 @@ body {
         &__info {
             width: 48%;
         }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 900px;
+    }
+
+    .header {
+
+        &__link {
+            margin: 0px 20px;
+        }
+    }
+
+    .hero {
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+    }
+
+    .button {
+        padding: 15px 38px;
+    }
+
+    .steps {
+
+        &__title {
+            font-size: 42px;
+        }
+    }
+
+    .card {
+
+        &__title {
+            padding: 145px 0px 0px 0px;
+            margin-bottom: 40px;
+
+            &:before {
+                font-size: 120px;
+            }
+        }
+    }
+
+    .review {
+
+        &__title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .product {
+
+        &__title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin-bottom: 40px;
+        }
+    }
+
+    .profile {
+        padding: 23px 30px;
     }
 }
