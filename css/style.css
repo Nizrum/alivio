@@ -154,6 +154,12 @@ body {
   text-decoration: underline;
 }
 
+.header__menu-button {
+  display: none;
+  background-color: transparent;
+  margin-left: 35px;
+}
+
 .logo {
   display: block;
   width: 80px;
@@ -344,6 +350,7 @@ body {
   width: 73px;
   height: 73px;
   background-image: url(../images/play-button.svg);
+  background-size: contain;
 }
 
 .review__video:hover:after {
@@ -368,6 +375,7 @@ body {
   width: 640px;
   border-radius: 18px;
   margin: 0px 0px 75px 60px;
+  object-fit: cover;
 }
 
 .product__info {
@@ -575,5 +583,63 @@ body {
   }
   .profile {
     padding: 23px 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 700px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__menu-button {
+    display: block;
+  }
+  .steps {
+    padding: 120px 0px;
+  }
+  .steps__header {
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  .steps__title {
+    font-size: 32px;
+  }
+  .card__title {
+    font-size: 24px;
+    padding-top: 120px;
+    margin-bottom: 20px;
+  }
+  .card__subtitle {
+    margin-bottom: 40px;
+  }
+  .review {
+    padding: 120px 0px;
+  }
+  .review__title {
+    font-size: 32px;
+  }
+  .review__subtitle {
+    font-size: 18px;
+  }
+  .review__video:after {
+    width: 50px;
+    height: 50px;
+  }
+  .product {
+    padding: 120px 0px;
+  }
+  .product__title {
+    font-size: 32px;
+  }
+  .product__image {
+    margin: 0px 0px 200px 3%;
+  }
+  .footer {
+    padding: 120px 0px;
+  }
+  .footer__link {
+    margin-bottom: 40px;
   }
 }

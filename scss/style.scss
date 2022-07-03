@@ -68,6 +68,12 @@ body {
             text-decoration: underline;
         }
     }
+
+    &__menu-button {
+        display: none;
+        background-color: transparent;
+        margin-left: 35px;
+    }
 }
 
 .logo {
@@ -270,6 +276,7 @@ body {
             width: 73px;
             height: 73px;
             background-image: url(../images/play-button.svg);
+            background-size: contain;
         }
 
         &:hover {
@@ -298,6 +305,7 @@ body {
         width: 640px;
         border-radius: 18px;
         margin: 0px 0px 75px 60px;
+        object-fit: cover;
     }
 
     &__info {
@@ -563,5 +571,89 @@ body {
 
     .profile {
         padding: 23px 30px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .container {
+        width: 700px;
+    }
+
+    .header {
+
+        &__menu {
+            display: none;
+        }
+
+        &__menu-button {
+            display: block;
+        }
+    }
+
+    .steps {
+        padding: 120px 0px;
+
+        &__header {
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .card {
+
+        &__title {
+            font-size: 24px;
+            padding-top: 120px;
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+    }
+
+    .review {
+        padding: 120px 0px;
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__video {
+
+            &:after {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    .product {
+        padding: 120px 0px;
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__image {
+            margin: 0px 0px 200px 3%;
+        }
+    }
+
+    .footer {
+        padding: 120px 0px;
+
+        &__link {
+            margin-bottom: 40px;
+        }
     }
 }
