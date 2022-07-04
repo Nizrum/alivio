@@ -643,3 +643,58 @@ body {
     margin-bottom: 40px;
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    width: 500px;
+  }
+  .steps {
+    padding: 100px 0px;
+  }
+  .steps__header {
+    margin-bottom: 20px;
+  }
+  .steps__cards {
+    width: 100%;
+    overflow: scroll;
+    padding-bottom: 12px;
+  }
+  .card {
+    flex: 0 0 200px;
+    margin-right: 40px;
+  }
+  .card:last-child {
+    margin-right: 0px;
+  }
+  .review {
+    padding: 100px 0px;
+  }
+  .review__wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .review__video {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .review__text {
+    width: 100%;
+  }
+  .product {
+    padding: 100px 0px;
+  }
+  .product__wrapper {
+    flex-direction: column-reverse;
+  }
+  .product__info {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .product__image {
+    width: 70%;
+    margin: 0px 0px 100px 30%;
+  }
+  .footer {
+    padding: 100px 0px;
+  }
+}

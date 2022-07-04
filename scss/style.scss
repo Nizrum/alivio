@@ -657,3 +657,75 @@ body {
         }
     }
 }
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 500px;
+    }
+
+    .steps {
+        padding: 100px 0px;
+
+        &__header {
+            margin-bottom: 20px;
+        }
+
+        &__cards {
+            width: 100%;
+            overflow: scroll;
+            padding-bottom: 12px;
+        }
+    }
+
+    .card {
+        flex: 0 0 200px;
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    .review {
+        padding: 100px 0px;
+
+        &__wrapper {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        &__video {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+    }
+
+    .product {
+        padding: 100px 0px;
+
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        &__info {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__image {
+            width: 70%;
+            margin: 0px 0px 100px 30%;
+        }
+    }
+
+    .footer {
+        padding: 100px 0px;
+    }
+}
+
+// коммит сделай
