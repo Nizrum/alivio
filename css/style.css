@@ -193,6 +193,7 @@ body {
   display: flex;
   align-items: center;
   height: calc(100vh - 84px);
+  min-height: 400px;
 }
 
 .hero__wrapper {
@@ -593,6 +594,9 @@ body {
   .header__menu {
     display: none;
   }
+  .header__buttons {
+    display: none;
+  }
   .header__menu-button {
     display: block;
   }
@@ -696,5 +700,38 @@ body {
   }
   .footer {
     padding: 100px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .hero__title {
+    font-size: 60px;
+  }
+  .steps__subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .steps__title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .steps__text {
+    width: 100%;
+  }
+  .product__subtitle {
+    font-size: 20px;
+  }
+  .product__image {
+    margin: 0px 0px 250px 30%;
+  }
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+  .footer__link {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }
